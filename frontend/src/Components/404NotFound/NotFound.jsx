@@ -12,7 +12,7 @@ export default function NotFound() {
       const timer = setTimeout(() => setCounter(counter - 1), 1000);
       return () => clearTimeout(timer);
     } else {
-      navigate('/admin/home');
+      navigate('/admin/products');
     }
   }, [counter, navigate]);
 

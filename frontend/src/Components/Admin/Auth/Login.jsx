@@ -24,7 +24,7 @@ function AdminLogin() {
                 // Store token in localStorage
                 if (response.data.token) {
                     localStorage.setItem('token', response.data.token);
-                    navigate('/admin/home');
+                    navigate('/admin/products');
                 }
 
                 return response.data;
@@ -85,7 +85,7 @@ function AdminLogin() {
                     </div>
                     <button
                         type="submit"
-                        className="submit-btn"
+                        className="btn btn-danger"
                         disabled={loading}
                     >
                         {loading ? 'Logging in...' : 'Login'}
